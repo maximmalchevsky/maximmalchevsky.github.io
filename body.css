@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Light.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --bg-color-1: ivory;
+
+    --text-color: #2c2b2b;
+    --text-color-hover: #a50f0f;
+    --text-color-bad: #F92C85;
+    --link-color: #000000;
+    --border-color: #2c2b2b;
+    --placeholder-color: #2c2b2b;
+
+    --table-color-1: gray;
+    --table-color-2: rgb(85, 79, 79);
+    --table-color-3: #929292;
+    --table-color-hover: #90a6d8;
+
+    --font-weight-light: 200;
+    --font-weight-normal: 500;
+    --font-weight-bold: bold;
+
+    --font-size-title: 24px;
+    --font-size-name: 20px;
+    --font-size-text: 16px;
+
+    --checkbox-height: 26px;
+    --checkbox-width: 45px;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+}
+
+bd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100svh;
+    background-color: var(--bg-color-1);
+    min-width: 320px;
+    text-decoration:none;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.center-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+}
+
+main{
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-wrapper{
+    width: 80%;
+}
+.main-wrapper > h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.main-wrapper-title{
+    font-size: var(--font-size-title);
+}
+
+@media screen and (max-width: 1024px) {
+    :root{
+
+        --checkbox-height: 24px;
+        --checkbox-width: 40px;
+    }
+    .main-wrapper{
+        width: 100%;       
+    }
+}
+
+@media screen and (max-width: 876px) {
+    :root{
+
+        --checkbox-height: 20px;
+        --checkbox-width: 32px;
+
+        --font-size-title: 20px;
+        --font-size-name: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root{
+
+        --checkbox-height: 18px;
+        --checkbox-width: 28px;
+    }
+}
